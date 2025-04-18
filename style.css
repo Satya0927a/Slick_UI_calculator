@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to bottom right,#32393F, black);
+    background-attachment: fixed;
+}
+
+.calc_body {
+    /* background-color: red; */
+    background: linear-gradient(to bottom right,#363C41, #0D1316);
+    height: fit-content;
+    width: 25rem;
+    margin: 10vh auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: 16px 14px 24px 0px black, inset 0.2px 0.6px 1px 0px #ffffff82;
+
+}
+
+.display {
+    
+    margin: 1.3rem;
+    height: 10rem;
+    background-color: #12171A;
+    color: white;
+    border-radius: 16px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-family: "Bungee Spice", sans-serif;
+    font-size: 1.5rem;
+    box-shadow: inset 2px 2px 9px 0px black, 0.3px 0.3px #ffffff82;
+
+}
+.display h1{
+    text-shadow: 0px 0px 14px black;
+    ;
+}
+
+
+.keypad {
+    margin: 0rem 1rem;
+    margin-bottom: 1rem;
+    
+    /* background-color: blue; */
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr 0.5fr 1fr;
+    /* gap: 1rem; */
+    justify-content: center;
+    align-items: center;
+
+}
+.keypad button{
+    height: 4rem;
+    font-size: 1.5rem;
+    font-weight: 1000;
+    border: none;
+    border-radius: 10px;
+    margin: 0.8rem;
+    box-shadow: 3px 3px 5px #000000b8, inset 0.2px 0.6px 1px 0px #ffffff82;
+    border: 1px solid black;
+    
+    color: #D9DADB;
+}
+.grey{
+    background: linear-gradient(to bottom right, #2F363C, #20252B);
+}
+/* layout  */
+
+#sub {
+    grid-area: 2 / 4 / 3 / 5;
+
+}
+
+#add {
+    grid-area: 3 / 4 / 5 / 5;
+    height: 80%;
+
+}
+
+#result {
+    grid-area: 5 / 4 / 7 / 5;
+    height: 80%;
+    background-color: #DB6515;
+    
+}
+
+.key0 {
+    grid-area: 6 / 1 / 7 / 3;
+}
+
+#dot {
+    grid-area: 6 / 3 / 7 / 4;
+
+}
+
+.key3 {
+    grid-area: 4 / 1 / 6 / 2;
+}
+
+.key2 {
+    grid-area: 4 / 2 / 6 / 3;
+}
+
+.key1 {
+    grid-area: 4 / 3 / 6 / 4;
+}
