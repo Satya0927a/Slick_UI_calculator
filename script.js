@@ -36,7 +36,7 @@ del.addEventListener("click", ()=>{
 evl.addEventListener("click", ()=>{
     let arr = display_string.trim().split(" ");
     // console.log(arr);
-    
+    //this however only calculates linearly which means it doesnt follow bodmas rule
     let oper = "+"
     for(let i = 0; i < arr.length; i++){
         if(arr[i] == "+" || arr[i] == "-" || arr[i] == "/" || arr[i] == "*"){

@@ -37,6 +37,8 @@ body {
     font-family: "Bungee Spice", sans-serif;
     font-size: 1.5rem;
     box-shadow: inset 2px 2px 9px 0px black, 0.3px 0.3px #ffffff82;
+    /* temporary soln  */
+    overflow: hidden; 
 
 }
 .display h1{
